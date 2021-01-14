@@ -1,0 +1,141 @@
+@font-face {
+  font-family: Roboto;
+  src: local("Roboto Light"), local("Roboto-Light"),
+    url(../font/roboto/Robotolight.woff2) format("woff2"),
+    url(../font/roboto/Robotolight.woff) format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: Roboto;
+  src: local("Roboto"), local("Roboto-Regular"),
+    url(../font/roboto/Roboto.woff2) format("woff2"),
+    url(../font/roboto/Roboto.woff) format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Roboto;
+  src: local("Roboto Medium"), local("Roboto-Medium"),
+    url(../font/roboto/Robotomedium.woff2) format("woff2"),
+    url(../font/roboto/Robotomedium.woff) format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: Roboto;
+  src: local("Roboto Bold"), local("Roboto-Bold"),
+    url(../font/roboto/Robotobold.woff2) format("woff2"),
+    url(../font/roboto/Robotobold.woff) format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+.font-300 {
+  font-family: Roboto, Arial, sans-serif;
+  font-weight: 300;
+}
+.font-400 {
+  font-family: Roboto, Arial, sans-serif;
+  font-weight: 400;
+}
+.font-500 {
+  font-family: Roboto, Arial, sans-serif;
+  font-weight: 500;
+}
+.font-700 {
+  font-family: Roboto, Arial, sans-serif;
+  font-weight: 700;
+}
+.items-cards_layout {
+  display: flex;
+  flex-flow: row wrap;
+}
+.item_card {
+  display: block;
+  background: #333;
+  border-radius: 10px;
+  padding: 60px 36px 47px 36px;
+  box-sizing: border-box;
+  width: calc((100% - 3 * 30px) / 4);
+  margin-right: 30px;
+  margin-bottom: 30px;
+  position: relative;
+}
+.item_card:nth-child(4n) {
+  margin-right: 0;
+}
+.item_card:hover {
+  transform: translateY(-5px) translateX(-5px);
+}
+.item_card .card_cover {
+  width: 160px;
+  height: 160px;
+  margin: 0 auto;
+  margin-bottom: 43px;
+  display: block;
+}
+.item_card .item_category {
+  font-size: 14px;
+  line-height: 17px;
+  color: #999;
+  margin-bottom: 10px;
+  font-family: Roboto, Arial, sans-serif;
+  font-weight: 300;
+  max-width: 100%;
+  display: inline-block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.item_card .item_name {
+  font-size: 18px;
+  line-height: 22px;
+  color: #fff;
+  margin-bottom: 12px;
+  font-family: Roboto, Arial, sans-serif;
+  font-weight: 400;
+}
+.item_card .item_price {
+  font-size: 18px;
+  line-height: 22px;
+  color: #fff;
+  margin-bottom: 0;
+  font-family: Roboto, Arial, sans-serif;
+  font-weight: 300;
+}
+.item_card .item_comments {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  text-align: right;
+  font-size: 16px;
+  line-height: 21px;
+  color: #ffb100;
+  font-family: Roboto, Arial, sans-serif;
+  font-weight: 400;
+}
+.item_card .item_comments span {
+  margin-right: 5px;
+}
+.brand_card {
+  height: 85px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #333;
+  border-radius: 10px;
+  width: calc((100% - 3 * 30px) / 4);
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+.brand_card:hover {
+  transform: translateY(-5px) translateX(-5px);
+}
+.brand_card:nth-child(4n) {
+  margin-right: 0;
+}
+.brand_card img {
+  width: 36px;
+  height: 36px;
+}
